@@ -1,0 +1,4 @@
+# Running `make` dumps all generated certificate files here. Ignore these files
+*
+# but still commit the empty folder.
+!.gitignore
