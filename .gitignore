@@ -1,0 +1,8 @@
+# ignore make generated files
+
+localhostCA.key
+localhostCA.pem
+localhostCA.srl
+server.key
+server.crt
+server.csr

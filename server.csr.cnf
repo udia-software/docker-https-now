@@ -1,0 +1,15 @@
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+# change these to whatever you want
+[dn]
+C=CA
+ST=AB
+L=Edmonton
+O=Udia
+OU=Udia
+emailAddress=alex@udia.ca
+CN=localhost
