@@ -39,8 +39,9 @@ make --version
     - **For macOSX**, open `Application/Utilities/Keychain Access.app`
         - `File > Import Items` and choose the created `ssl/localhostCA.pem`
         - Double click `localhost` and set Trust to `Always Trust`
-3. Set the environment variable for your localhost IP (if different than `127.0.0.1`)
-    - `export LOCAL_IP=127.0.0.1`
+3. If defaults aren't appropriate, set your environment variables in `.env`
+    - `LOCAL_IP=127.0.0.1`
+    - `PROXY_PORT=3000`
 4. Run `docker-compose up` or `docker-compose up -d` to daemonize it
 5. Check that everything is running smoothly with `docker-compose ps`
 
@@ -49,7 +50,7 @@ make --version
 * <a href="https://localhost">https://localhost</a> &rightarrow; <a href="http://localhost:3000">http://localhost:3000</a>
     * useful for something like [Create React App](https://github.com/facebook/create-react-app)!
 
-If you want to proxy another port (say 3001), update the `proxy.conf` file and run `docker-compose down && docker-compose up`.
+If you want to proxy another port (say 3001), update the `.env` file and run `docker-compose down && docker-compose up`.
 
 ## License
 
