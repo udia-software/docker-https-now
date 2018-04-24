@@ -7,7 +7,7 @@ services:
 
 script:
   - make all && docker-compose up -d
-  - nc -vz 127.0.0.1 443
+  - nc -vz 0.0.0.0 443
 
 after_script:
   - docker-compose down
