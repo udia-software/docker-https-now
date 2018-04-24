@@ -1,0 +1,12 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+script:
+  - make all && docker-compose up -d
+
+after_script:
+  - docker-compose down
