@@ -1,5 +1,7 @@
 # Docker HTTPS Now
 
+[![Build Status](https://travis-ci.org/udia-software/docker-https-now.svg?branch=master)](https://travis-ci.org/udia-software/docker-https-now)
+
 Helper docker-compose project for reverse proxying HTTP to HTTPS using a self signed cert.
 
 ## Prerequisites
