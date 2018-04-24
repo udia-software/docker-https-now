@@ -37,6 +37,8 @@ make --version
     - **For macOSX**, open `Application/Utilities/Keychain Access.app`
         - `File > Import Items` and choose the created `ssl/localhostCA.pem`
         - Double click `localhost` and set Trust to `Always Trust`
+3. Set the environment variable for your localhost IP (if different than `127.0.0.1`)
+    - `export LOCAL_IP=127.0.0.1`
 4. Run `docker-compose up` or `docker-compose up -d` to daemonize it
 5. Check that everything is running smoothly with `docker-compose ps`
 
